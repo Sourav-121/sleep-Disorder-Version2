@@ -209,10 +209,10 @@
 
 # #     # --- Recommendation Section ---
 # #     st.markdown("---")
-# #     st.markdown("### 💡 Personalized Recommendations")
+# #     st.markdown("### Personalized Recommendations")
 
 # #     if is_healthy:
-# #         st.success("🎉 Great job! Your sleep profile looks healthy. Here is how you can maintain it:")
+# #         st.success("Great job! Your sleep profile looks healthy. Here is how you can maintain it:")
 # #         st.markdown("""
 # #         * **Consistency:** Try to go to bed and wake up at the same time every day, even on weekends.
 # #         * **Active Lifestyle:** Keep up with your daily physical activities and step count.
@@ -220,7 +220,7 @@
 # #         """)
         
 # #     elif "Insomnia" in result_text:
-# #         st.warning("⚠️ Your profile indicates symptoms of Insomnia. Consider these lifestyle adjustments:")
+# #         st.warning("Your profile indicates symptoms of Insomnia. Consider these lifestyle adjustments:")
 # #         st.markdown("""
 # #         * **Digital Detox:** Avoid phones, laptops, or TV at least 1 hour before bed (blue light affects sleep).
 # #         * **Limit Caffeine:** Avoid tea, coffee, or energy drinks in the late afternoon and evening.
@@ -230,7 +230,7 @@
 # #         """)
         
 # #     elif "Apnea" in result_text:
-# #         st.error("🚨 Your profile indicates a risk of Sleep Apnea. This often requires medical attention:")
+# #         st.error("Your profile indicates a risk of Sleep Apnea. This often requires medical attention:")
 # #         st.markdown("""
 # #         * **Consult a Doctor:** Sleep apnea can lead to serious health issues. Please see a healthcare professional for a proper diagnosis.
 # #         * **Sleep Position:** Try sleeping on your side instead of your back to keep your airways open.
@@ -246,12 +246,12 @@
 
 # # --- Recommendation Section ---
 #     st.markdown("---")
-#     st.markdown("### 💡 Personalized Recommendations")
+#     st.markdown("### Personalized Recommendations")
 
 #     if is_healthy:
 #         st.markdown("""
 #         <div style='background-color: #e8f5e9; padding: 15px; border-radius: 8px; font-size: 22px; color: #2e7d32; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #2e7d32;'>
-#             🎉 Great job! Your sleep profile looks healthy. Here is how you can maintain it:
+#             Great job! Your sleep profile looks healthy. Here is how you can maintain it:
 #         </div>
 #         <ul style='font-size: 20px; line-height: 1.8; color: #2c3e50;'>
 #             <li><b>Consistency:</b> Try to go to bed and wake up at the same time every day, even on weekends.</li>
@@ -263,7 +263,7 @@
 #     elif "Insomnia" in result_text:
 #         st.markdown("""
 #         <div style='background-color: #fff3cd; padding: 15px; border-radius: 8px; font-size: 22px; color: #856404; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #ffc107;'>
-#             ⚠️ Your profile indicates symptoms of Insomnia. Consider these lifestyle adjustments:
+#             Your profile indicates symptoms of Insomnia. Consider these lifestyle adjustments:
 #         </div>
 #         <ul style='font-size: 20px; line-height: 1.8; color: #2c3e50;'>
 #             <li><b>Digital Detox:</b> Avoid phones, laptops, or TV at least 1 hour before bed (blue light affects sleep).</li>
@@ -277,7 +277,7 @@
 #     elif "Apnea" in result_text:
 #         st.markdown("""
 #         <div style='background-color: #f8d7da; padding: 15px; border-radius: 8px; font-size: 22px; color: #721c24; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #dc3545;'>
-#             🚨 Your profile indicates a risk of Sleep Apnea. This often requires medical attention:
+#             Your profile indicates a risk of Sleep Apnea. This often requires medical attention:
 #         </div>
 #         <ul style='font-size: 20px; line-height: 1.8; color: #2c3e50;'>
 #             <li><b>Consult a Doctor:</b> Sleep apnea can lead to serious health issues. Please see a healthcare professional for a proper diagnosis.</li>
@@ -290,7 +290,7 @@
 #     else:
 #         st.markdown(f"""
 #         <div style='background-color: #d1ecf1; padding: 15px; border-radius: 8px; font-size: 22px; color: #0c5460; font-weight: bold; border-left: 5px solid #17a2b8;'>
-#             ℹ️ Your result is: {result_text}. Please consult a healthcare provider for personalized medical advice.
+#             Your result is: {result_text}. Please consult a healthcare provider for personalized medical advice.
 #         </div>
 #         """, unsafe_allow_html=True)
 
@@ -427,12 +427,12 @@ if predict_button and model:
     """, unsafe_allow_html=True)
 
     # --- Recommendation Section (Moved immediately below prediction box) ---
-    st.markdown("### 💡 Personalized Recommendations")
+    st.markdown("### Personalized Recommendations")
 
     if is_healthy:
         st.markdown("""
         <div style='background-color: #e8f5e9; padding: 15px; border-radius: 8px; font-size: 22px; color: #2e7d32; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #2e7d32;'>
-            🎉 Great job! Your sleep profile looks healthy. Here is how you can maintain it:
+            Great job! Your sleep profile looks healthy. Here is how you can maintain it:
         </div>
         <ul style='font-size: 20px; line-height: 1.8; color: #2c3e50;'>
             <li><b>Consistency:</b> Try to go to bed and wake up at the same time every day, even on weekends.</li>
@@ -444,7 +444,7 @@ if predict_button and model:
     elif "Insomnia" in result_text:
         st.markdown("""
         <div style='background-color: #fff3cd; padding: 15px; border-radius: 8px; font-size: 22px; color: #856404; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #ffc107;'>
-            ⚠️ Your profile indicates symptoms of Insomnia. Consider these lifestyle adjustments:
+            Your profile indicates symptoms of Insomnia. Consider these lifestyle adjustments:
         </div>
         <ul style='font-size: 20px; line-height: 1.8; color: #2c3e50;'>
             <li><b>Digital Detox:</b> Avoid phones, laptops, or TV at least 1 hour before bed (blue light affects sleep).</li>
@@ -458,7 +458,7 @@ if predict_button and model:
     elif "Apnea" in result_text:
         st.markdown("""
         <div style='background-color: #f8d7da; padding: 15px; border-radius: 8px; font-size: 22px; color: #721c24; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #dc3545;'>
-            🚨 Your profile indicates a risk of Sleep Apnea. This often requires medical attention:
+            Your profile indicates a risk of Sleep Apnea. This often requires medical attention:
         </div>
         <ul style='font-size: 20px; line-height: 1.8; color: #2c3e50;'>
             <li><b>Consult a Doctor:</b> Sleep apnea can lead to serious health issues. Please see a healthcare professional for a proper diagnosis.</li>
@@ -471,7 +471,7 @@ if predict_button and model:
     else:
         st.markdown(f"""
         <div style='background-color: #d1ecf1; padding: 15px; border-radius: 8px; font-size: 22px; color: #0c5460; font-weight: bold; border-left: 5px solid #17a2b8;'>
-            ℹ️ Your result is: {result_text}. Please consult a healthcare provider for personalized medical advice.
+            Your result is: {result_text}. Please consult a healthcare provider for personalized medical advice.
         </div>
         """, unsafe_allow_html=True)
 
@@ -545,7 +545,7 @@ if predict_button and model:
 
     # --- SHAP Plot ---
     st.markdown("---")
-    st.markdown("### 🔍 AI Decision Logic (SHAP Interpretation)")
+    st.markdown("### AI Decision Logic (SHAP Interpretation)")
     with st.spinner("Analyzing features..."):
         shap_values = explainer.shap_values(scaled)
         curr_shap = shap_values[prediction] if isinstance(shap_values, list) else shap_values[0]
